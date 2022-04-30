@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "469956478938",
+    "project_id": "fitfab-7999e",
+    "storage_bucket": "fitfab-7999e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469956478938:android:975443b951692a2ac1a2e3",
+        "android_client_info": {
+          "package_name": "com.example.fitfab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469956478938-1c9dimbhrbdll11c2vb8bvb16jg0g6h6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fitfab",
+            "certificate_hash": "e9b382b49c14ef174f4fe7cb1bb69c611ee7d2ea"
+          }
+        },
+        {
+          "client_id": "469956478938-rkc8eq2cbgtbc9ej58dnpokumeh6t275.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNtHQ6T0X6ZwTelhx6rurpnsQ_HBLOE9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469956478938-rkc8eq2cbgtbc9ej58dnpokumeh6t275.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

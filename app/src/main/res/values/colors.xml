@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#fffe5c5f</color>
+    <color name="purple_500">#fffe5c5f</color>
+    <color name="purple_700">#fffe5c5f</color>
+    <color name="teal_200">#eef42e4f</color>
+    <color name="teal_700">#eef42e4f</color>
+    <color name="black">#ee000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="card_background">#80000000</color>
+</resources>
