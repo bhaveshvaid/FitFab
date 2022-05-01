@@ -2,6 +2,7 @@ package com.example.fitfab;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.Toast;
@@ -19,19 +20,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.fitfab.databinding.ActivityMain2Binding;
 
 public class MainActivity2 extends AppCompatActivity {
-    public void home(View view){
+    NavController navController;
+    public void home(MenuItem menuItem){
         Intent home= new Intent(this,MainActivity2.class);
         startActivity(home);
     }
 
+    public void bmiCalculator(MenuItem menuItem){
+        navController.navigate(R.id.action_nav_home_to_bmiFragment);
+    }
+
     private AppBarConfiguration mAppBarConfiguration;
-    private ActivityMain2Binding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityMain2Binding.inflate(getLayoutInflater());
+        ActivityMain2Binding binding = ActivityMain2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMain.toolbar);
@@ -50,7 +55,7 @@ public class MainActivity2 extends AppCompatActivity {
                 R.id.nav_home, R.id.nav_bmi, R.id.nav_diet,R.id.nav_contact,R.id.nav_exercise)
                 .setOpenableLayout(drawer)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
     }

@@ -13,8 +13,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase=FirebaseDatabase.getInstance();
-    EditText userid=findViewById(R.id.userid);
-    EditText password=findViewById(R.id.password);
+    EditText userid;
+    EditText password;
     public void login(View view){
         if(userid.getText().toString().isEmpty()){
             Toast.makeText(this, "Please enter a valid user id", Toast.LENGTH_SHORT).show();
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        userid=findViewById(R.id.userid);
+        password=findViewById(R.id.password);
     }
 }
